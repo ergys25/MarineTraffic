@@ -11,16 +11,16 @@ This project involves scraping data from MarineTraffic.com after logging in. The
 ## Getting Started
 
 ### Step 1: Clone the Repository
-\`\`\`bash
+```bash
 git clone <repository_url>
 cd <repository_directory>
-\`\`\`
+```
 
 ### Step 2: Install Required Packages
 Install the required Python packages using pip and the provided \`requirements.txt\` file.
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### Step 3: Set Up WebDriver
 Download the appropriate WebDriver (e.g., geckodriver for Firefox) and place it in the project directory or update the \`geckodriver_path\` in the code.
@@ -30,9 +30,9 @@ Update the hardcoded email address and password in the code with your own Marine
 
 ### Step 5: Run the Script
 Run the Python script to execute the web scraping.
-\`\`\`bash
+```bash
 python scrape_marinetraffic.py
-\`\`\`
+```
 
 ## Code Structure
 - \`scrape_marinetraffic.py\`: Contains the main script for scraping data using Selenium.
@@ -43,7 +43,7 @@ To automate the reCAPTCHA verification in the future, you can use services like 
 
 ## Sample JSON Output
 The extracted data will be stored in a JSON array in the following format:
-\`\`\`json
+```json
 
 
 
@@ -63,4 +63,4 @@ The extracted data will be stored in a JSON array in the following format:
     {"Name": "PREDATOR", "IMO": "1009314", "MMSI": "341548000", "Speed": "0 kn", "Course": "325 \u00b0"},
     {"Name": "MINERVA AMORGOS", "IMO": "9885855", "MMSI": "256047000", "Speed": "13.9 kn", "Course": "207 \u00b0"}
 ]
-\`\`\`
+```
