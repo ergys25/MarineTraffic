@@ -1,0 +1,27 @@
+2024-04-05 17:42:06,983 - INFO - WebDriver initialized successfully.
+2024-04-05 17:42:08,474 - INFO - Navigated to login page.
+2024-04-05 17:42:11,179 - INFO - Login button clicked successfully.
+2024-04-05 17:42:11,204 - INFO - Email address entered successfully.
+2024-04-05 17:42:11,217 - INFO - Password entered successfully.
+2024-04-05 17:42:11,459 - INFO - Login button clicked successfully.
+2024-04-05 17:42:14,480 - INFO - Main page loaded successfully.
+2024-04-05 17:42:16,892 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:688894/mmsi:538010145/imo:9591806/vessel:EFFIE
+2024-04-05 17:42:23,024 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:688894/mmsi:538010145/imo:9591806/vessel:EFFIE
+2024-04-05 17:42:25,627 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:374953/mmsi:636018294/imo:9249180/vessel:NEW_FRIENDSHIP
+2024-04-05 17:42:29,703 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:374953/mmsi:636018294/imo:9249180/vessel:NEW_FRIENDSHIP
+2024-04-05 17:42:30,582 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:5961417/mmsi:240126100/imo:0/vessel:LITTLE_M
+2024-04-05 17:42:34,653 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:5961417/mmsi:240126100/imo:0/vessel:LITTLE_M
+2024-04-05 17:43:24,708 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:3549980/mmsi:636018564/imo:9679892/vessel:CMA_CGM_CONGO
+2024-04-05 17:43:24,754 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:3549980/mmsi:636018564/imo:9679892/vessel:CMA_CGM_CONGO
+2024-04-05 17:43:30,268 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:6334768/mmsi:440486000/imo:9868364/vessel:HMM_ST_PETERSBURG
+2024-04-05 17:43:31,335 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:6334768/mmsi:440486000/imo:9868364/vessel:HMM_ST_PETERSBURG
+2024-04-05 17:43:32,152 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:7848861/mmsi:636022757/imo:9941788/vessel:EMDEN
+2024-04-05 17:43:35,787 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:7848861/mmsi:636022757/imo:9941788/vessel:EMDEN
+2024-04-05 17:44:10,678 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:685004/mmsi:563191300/imo:9290115/vessel:ONE_ATLAS
+2024-04-05 17:44:10,719 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:685004/mmsi:563191300/imo:9290115/vessel:ONE_ATLAS
+2024-04-05 17:44:13,205 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:385499/mmsi:341548000/imo:1009314/vessel:PREDATOR
+2024-04-05 17:44:16,269 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:385499/mmsi:341548000/imo:1009314/vessel:PREDATOR
+2024-04-05 17:44:16,888 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:7236561/mmsi:256047000/imo:9885855/vessel:MINERVA_AMORGOS
+2024-04-05 17:44:20,502 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:7236561/mmsi:256047000/imo:9885855/vessel:MINERVA_AMORGOS
+2024-04-05 17:44:20,503 - INFO - AIS data saved to JSON file.
+2024-04-05 17:44:20,733 - INFO - WebDriver closed.
