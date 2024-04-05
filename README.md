@@ -44,6 +44,14 @@ To automate the reCAPTCHA verification in the future, you can use services like 
 ## Sample JSON Output
 The extracted data will be stored in a JSON array in the following format:
 \`\`\`json
+
+
+
+
+
+
+
+
 [
     {"Name": "EFFIE", "IMO": "9591806", "MMSI": "538010145", "Speed": "12.2 kn", "Course": "207 \u00b0"},
     {"Name": "NEW FRIENDSHIP", "IMO": "9249180", "MMSI": "636018294", "Speed": "10.5 kn", "Course": "209 \u00b0"},
