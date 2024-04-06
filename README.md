@@ -31,7 +31,7 @@ Update the hardcoded email address and password in the code with your own Marine
 ### Step 5: Run the Script
 Run the Python script to execute the web scraping.
 ```bash
-python scrape_marinetraffic.py
+python main.py
 ```
 
 ## Code Structure
