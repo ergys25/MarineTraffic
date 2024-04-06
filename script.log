@@ -364,3 +364,89 @@ json.deserialize@chrome://remote/content/marionette/json.sys.mjs:293:10
 receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:72:30
 
 2024-04-06 16:25:02,629 - INFO - WebDriver closed.
+2024-04-06 16:28:23,078 - INFO - Navigated to login page.
+2024-04-06 16:28:25,935 - INFO - Login button clicked successfully.
+2024-04-06 16:28:25,964 - INFO - Email address entered successfully.
+2024-04-06 16:28:25,976 - INFO - Password entered successfully.
+2024-04-06 16:28:26,218 - INFO - Login button clicked successfully.
+2024-04-06 16:28:28,747 - INFO - Main page loaded successfully.
+2024-04-06 16:28:29,624 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:688894/mmsi:538010145/imo:9591806/vessel:EFFIE
+2024-04-06 16:28:29,626 - ERROR - An error occurred: Message: Browsing context has been discarded
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:192:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:678:5
+assert.that/<@chrome://remote/content/shared/webdriver/Assert.sys.mjs:485:13
+assert.open@chrome://remote/content/shared/webdriver/Assert.sys.mjs:147:4
+GeckoDriver.prototype.findElement@chrome://remote/content/marionette/driver.sys.mjs:1485:15
+despatch@chrome://remote/content/marionette/server.sys.mjs:318:40
+execute@chrome://remote/content/marionette/server.sys.mjs:289:16
+onPacket/<@chrome://remote/content/marionette/server.sys.mjs:262:20
+onPacket@chrome://remote/content/marionette/server.sys.mjs:263:9
+_onJSONObjectReady/<@chrome://remote/content/marionette/transport.sys.mjs:494:20
+
+2024-04-06 16:28:30,270 - INFO - WebDriver closed.
+2024-04-06 17:25:23,542 - INFO - Navigated to login page.
+2024-04-06 17:25:26,631 - INFO - Login button clicked successfully.
+2024-04-06 17:25:26,659 - INFO - Email address entered successfully.
+2024-04-06 17:25:26,672 - INFO - Password entered successfully.
+2024-04-06 17:25:26,904 - INFO - Login button clicked successfully.
+2024-04-06 17:25:29,424 - INFO - Main page loaded successfully.
+2024-04-06 17:25:31,821 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:688894/mmsi:538010145/imo:9591806/vessel:EFFIE
+2024-04-06 17:25:31,823 - ERROR - An error occurred: Message: Browsing context has been discarded
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:192:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:678:5
+assert.that/<@chrome://remote/content/shared/webdriver/Assert.sys.mjs:485:13
+assert.open@chrome://remote/content/shared/webdriver/Assert.sys.mjs:147:4
+GeckoDriver.prototype.findElement@chrome://remote/content/marionette/driver.sys.mjs:1485:15
+despatch@chrome://remote/content/marionette/server.sys.mjs:318:40
+execute@chrome://remote/content/marionette/server.sys.mjs:289:16
+onPacket/<@chrome://remote/content/marionette/server.sys.mjs:262:20
+onPacket@chrome://remote/content/marionette/server.sys.mjs:263:9
+_onJSONObjectReady/<@chrome://remote/content/marionette/transport.sys.mjs:494:20
+
+2024-04-06 17:25:32,471 - INFO - WebDriver closed.
+2024-04-06 17:27:39,070 - INFO - Navigated to login page.
+2024-04-06 17:27:39,073 - ERROR - An error occurred: Message: Browsing context has been discarded
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:192:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:678:5
+assert.that/<@chrome://remote/content/shared/webdriver/Assert.sys.mjs:485:13
+assert.open@chrome://remote/content/shared/webdriver/Assert.sys.mjs:147:4
+GeckoDriver.prototype.findElement@chrome://remote/content/marionette/driver.sys.mjs:1485:15
+despatch@chrome://remote/content/marionette/server.sys.mjs:318:40
+execute@chrome://remote/content/marionette/server.sys.mjs:289:16
+onPacket/<@chrome://remote/content/marionette/server.sys.mjs:262:20
+onPacket@chrome://remote/content/marionette/server.sys.mjs:263:9
+_onJSONObjectReady/<@chrome://remote/content/marionette/transport.sys.mjs:494:20
+
+2024-04-06 17:27:39,710 - INFO - WebDriver closed.
+2024-04-06 17:28:13,382 - ERROR - An error occurred: Message: Could not create a session: You must enable the 'Allow Remote Automation' option in Safari's Develop menu to control Safari via WebDriver.
+
+2024-04-06 17:28:27,902 - ERROR - An error occurred: Message: Could not create a session: You must enable the 'Allow Remote Automation' option in Safari's Develop menu to control Safari via WebDriver.
+
+2024-04-06 17:28:46,669 - INFO - Navigated to login page.
+2024-04-06 17:28:49,335 - INFO - Login button clicked successfully.
+2024-04-06 17:28:49,386 - INFO - Email address entered successfully.
+2024-04-06 17:28:49,399 - INFO - Password entered successfully.
+2024-04-06 17:28:49,656 - INFO - Login button clicked successfully.
+2024-04-06 17:28:51,682 - INFO - Main page loaded successfully.
+2024-04-06 17:28:53,024 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:688894/mmsi:538010145/imo:9591806/vessel:EFFIE
+2024-04-06 17:28:53,541 - ERROR - An error occurred: Message: Browsing context has been discarded
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:192:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:678:5
+assert.that/<@chrome://remote/content/shared/webdriver/Assert.sys.mjs:485:13
+assert.open@chrome://remote/content/shared/webdriver/Assert.sys.mjs:147:4
+GeckoDriver.prototype.findElement@chrome://remote/content/marionette/driver.sys.mjs:1485:15
+despatch@chrome://remote/content/marionette/server.sys.mjs:318:40
+execute@chrome://remote/content/marionette/server.sys.mjs:289:16
+onPacket/<@chrome://remote/content/marionette/server.sys.mjs:262:20
+onPacket@chrome://remote/content/marionette/server.sys.mjs:263:9
+_onJSONObjectReady/<@chrome://remote/content/marionette/transport.sys.mjs:494:20
+
+2024-04-06 17:28:53,908 - INFO - WebDriver closed.

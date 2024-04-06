@@ -31,7 +31,7 @@ def main():
                     By.XPATH,
                     "/html/body/div[2]/main/section/div[2]/div/div/div[2]/div/form/div/div/div[1]/div/div/input"))
         )
-        email_input.send_keys("ergysmania2016@gmail.com")  # Your email
+        email_input.send_keys("--YourEmail---")  # Your email
         logging.info("Email address entered successfully.")
 
         # Enter password
@@ -41,7 +41,7 @@ def main():
                     By.XPATH,
                     "/html/body/div[2]/main/section/div[2]/div/div/div[2]/div/form/div/div/div[2]/div/div/input"))
         )
-        password_input.send_keys("36533653QQq1.")  # Your password
+        password_input.send_keys("---YourPassword---")  # Your password
         logging.info("Password entered successfully.")
 
         # Click the login button
