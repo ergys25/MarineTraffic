@@ -43,3 +43,324 @@ json.deserialize@chrome://remote/content/marionette/json.sys.mjs:293:10
 receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:72:30
 
 2024-04-06 11:35:22,697 - INFO - WebDriver closed.
+2024-04-06 15:13:31,413 - ERROR - An error occurred: [WinError 2] The system cannot find the file specified
+2024-04-06 15:20:25,714 - ERROR - An error occurred: [WinError 216] This version of %1 is not compatible with the version of Windows you're running. Check your computer's system information and then contact the software publisher
+2024-04-06 15:23:26,898 - ERROR - An error occurred: [WinError 216] This version of %1 is not compatible with the version of Windows you're running. Check your computer's system information and then contact the software publisher
+2024-04-06 15:24:14,168 - ERROR - An error occurred: [WinError 216] This version of %1 is not compatible with the version of Windows you're running. Check your computer's system information and then contact the software publisher
+2024-04-06 15:24:25,447 - ERROR - An error occurred: [WinError 216] This version of %1 is not compatible with the version of Windows you're running. Check your computer's system information and then contact the software publisher
+2024-04-06 15:24:56,593 - ERROR - An error occurred: [WinError 216] This version of %1 is not compatible with the version of Windows you're running. Check your computer's system information and then contact the software publisher
+2024-04-06 15:25:25,106 - ERROR - An error occurred: [WinError 216] This version of %1 is not compatible with the version of Windows you're running. Check your computer's system information and then contact the software publisher
+2024-04-06 15:25:55,022 - ERROR - An error occurred: [WinError 216] This version of %1 is not compatible with the version of Windows you're running. Check your computer's system information and then contact the software publisher
+2024-04-06 15:25:55,369 - ERROR - An error occurred: [WinError 216] This version of %1 is not compatible with the version of Windows you're running. Check your computer's system information and then contact the software publisher
+2024-04-06 15:26:27,016 - ERROR - An error occurred: Message: Unable to locate or obtain driver for firefox; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2024-04-06 15:26:34,744 - ERROR - An error occurred: [WinError 216] This version of %1 is not compatible with the version of Windows you're running. Check your computer's system information and then contact the software publisher
+2024-04-06 15:26:48,891 - ERROR - An error occurred: [WinError 216] This version of %1 is not compatible with the version of Windows you're running. Check your computer's system information and then contact the software publisher
+2024-04-06 15:28:23,339 - ERROR - An error occurred: [WinError 216] This version of %1 is not compatible with the version of Windows you're running. Check your computer's system information and then contact the software publisher
+2024-04-06 15:30:06,326 - ERROR - An error occurred: [WinError 216] This version of %1 is not compatible with the version of Windows you're running. Check your computer's system information and then contact the software publisher
+2024-04-06 15:30:18,490 - ERROR - An error occurred: [WinError 216] This version of %1 is not compatible with the version of Windows you're running. Check your computer's system information and then contact the software publisher
+2024-04-06 15:31:03,114 - ERROR - An error occurred: [WinError 216] This version of %1 is not compatible with the version of Windows you're running. Check your computer's system information and then contact the software publisher
+2024-04-06 15:34:23,975 - ERROR - An error occurred: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+
+2024-04-06 15:34:33,694 - ERROR - An error occurred: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+
+2024-04-06 15:38:07,444 - ERROR - An error occurred: Message: Unable to locate or obtain driver for MicrosoftEdge; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2024-04-06 15:38:27,722 - ERROR - An error occurred: Message: Unable to locate or obtain driver for MicrosoftEdge; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2024-04-06 15:39:43,536 - ERROR - An error occurred: Message: Unable to locate or obtain driver for firefox; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2024-04-06 15:40:07,753 - ERROR - An error occurred: Message: Unable to locate or obtain driver for firefox; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2024-04-06 15:40:46,388 - ERROR - An error occurred while initializing the driver: Message: Unable to locate or obtain driver for firefox; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2024-04-06 15:40:46,389 - ERROR - An error occurred: Message: Unable to locate or obtain driver for firefox; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2024-04-06 15:40:46,851 - ERROR - An error occurred while initializing the driver: Message: Unable to locate or obtain driver for firefox; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2024-04-06 15:40:46,851 - ERROR - An error occurred: Message: Unable to locate or obtain driver for firefox; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2024-04-06 15:41:39,684 - ERROR - An error occurred: Message: Unable to locate or obtain driver for MicrosoftEdge; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2024-04-06 16:09:50,917 - ERROR - An error occurred: Message: Unable to locate or obtain driver for MicrosoftEdge; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+2024-04-06 16:12:35,580 - INFO - Navigated to login page.
+2024-04-06 16:12:39,486 - INFO - Login button clicked successfully.
+2024-04-06 16:12:40,522 - ERROR - An error occurred: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF798F15B82+59842]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF798EA4AB2+220434]
+	(No symbol) [0x00007FF798CCDCD7]
+	(No symbol) [0x00007FF798D1489D]
+	(No symbol) [0x00007FF798D14960]
+	(No symbol) [0x00007FF798D4F587]
+	(No symbol) [0x00007FF798D33F6F]
+	(No symbol) [0x00007FF798D0A0E7]
+	(No symbol) [0x00007FF798D4D149]
+	(No symbol) [0x00007FF798D33B93]
+	(No symbol) [0x00007FF798D0960E]
+	(No symbol) [0x00007FF798D087CC]
+	(No symbol) [0x00007FF798D091C1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7990C58FC+1052188]
+	(No symbol) [0x00007FF798D7FFC6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF798E2150C+37916]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF798E18E95+3493]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7990C4865+1047941]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF798EAD2C1+255265]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF798EA85B4+235540]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF798EA86EB+235851]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF798E9FEE1+201025]
+	BaseThreadInitThunk [0x00007FF944B2257D+29]
+	RtlUserThreadStart [0x00007FF94510AA58+40]
+
+2024-04-06 16:12:42,684 - INFO - WebDriver closed.
+2024-04-06 16:13:07,634 - INFO - Navigated to login page.
+2024-04-06 16:13:09,879 - INFO - Login button clicked successfully.
+2024-04-06 16:13:10,912 - ERROR - An error occurred: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF798F15B82+59842]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF798EA4AB2+220434]
+	(No symbol) [0x00007FF798CCDCD7]
+	(No symbol) [0x00007FF798D1489D]
+	(No symbol) [0x00007FF798D14960]
+	(No symbol) [0x00007FF798D4F587]
+	(No symbol) [0x00007FF798D33F6F]
+	(No symbol) [0x00007FF798D0A0E7]
+	(No symbol) [0x00007FF798D4D149]
+	(No symbol) [0x00007FF798D33B93]
+	(No symbol) [0x00007FF798D0960E]
+	(No symbol) [0x00007FF798D087CC]
+	(No symbol) [0x00007FF798D091C1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7990C58FC+1052188]
+	(No symbol) [0x00007FF798D7FFC6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF798E2150C+37916]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF798E18E95+3493]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7990C4865+1047941]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF798EAD2C1+255265]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF798EA85B4+235540]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF798EA86EB+235851]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF798E9FEE1+201025]
+	BaseThreadInitThunk [0x00007FF944B2257D+29]
+	RtlUserThreadStart [0x00007FF94510AA58+40]
+
+2024-04-06 16:13:13,050 - INFO - WebDriver closed.
+2024-04-06 16:14:08,677 - INFO - Navigated to login page.
+2024-04-06 16:14:10,862 - INFO - Login button clicked successfully.
+2024-04-06 16:14:11,910 - ERROR - An error occurred: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF798F15B82+59842]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF798EA4AB2+220434]
+	(No symbol) [0x00007FF798CCDCD7]
+	(No symbol) [0x00007FF798D1489D]
+	(No symbol) [0x00007FF798D14960]
+	(No symbol) [0x00007FF798D4F587]
+	(No symbol) [0x00007FF798D33F6F]
+	(No symbol) [0x00007FF798D0A0E7]
+	(No symbol) [0x00007FF798D4D149]
+	(No symbol) [0x00007FF798D33B93]
+	(No symbol) [0x00007FF798D0960E]
+	(No symbol) [0x00007FF798D087CC]
+	(No symbol) [0x00007FF798D091C1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7990C58FC+1052188]
+	(No symbol) [0x00007FF798D7FFC6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF798E2150C+37916]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF798E18E95+3493]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7990C4865+1047941]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF798EAD2C1+255265]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF798EA85B4+235540]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF798EA86EB+235851]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF798E9FEE1+201025]
+	BaseThreadInitThunk [0x00007FF944B2257D+29]
+	RtlUserThreadStart [0x00007FF94510AA58+40]
+
+2024-04-06 16:14:14,067 - INFO - WebDriver closed.
+2024-04-06 16:14:49,245 - INFO - Navigated to login page.
+2024-04-06 16:14:52,177 - INFO - Login button clicked successfully.
+2024-04-06 16:14:52,240 - INFO - Email address entered successfully.
+2024-04-06 16:14:52,283 - INFO - Password entered successfully.
+2024-04-06 16:14:52,536 - INFO - Login button clicked successfully.
+2024-04-06 16:14:57,849 - ERROR - An error occurred: Message: Browsing context has been discarded
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:192:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:678:5
+assert.that/<@chrome://remote/content/shared/webdriver/Assert.sys.mjs:485:13
+assert.open@chrome://remote/content/shared/webdriver/Assert.sys.mjs:147:4
+GeckoDriver.prototype.getTitle@chrome://remote/content/marionette/driver.sys.mjs:895:15
+despatch@chrome://remote/content/marionette/server.sys.mjs:318:40
+execute@chrome://remote/content/marionette/server.sys.mjs:289:16
+onPacket/<@chrome://remote/content/marionette/server.sys.mjs:262:20
+onPacket@chrome://remote/content/marionette/server.sys.mjs:263:9
+_onJSONObjectReady/<@chrome://remote/content/marionette/transport.sys.mjs:494:20
+
+2024-04-06 16:14:59,933 - INFO - WebDriver closed.
+2024-04-06 16:17:01,355 - INFO - Navigated to login page.
+2024-04-06 16:17:05,491 - ERROR - An error occurred: Message: The element with the reference 35af9e4b-a16e-45a6-a77b-3c0ce97ee4b8 is stale; either its node document is not the active document, or it is no longer connected to the DOM; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:192:5
+StaleElementReferenceError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:724:5
+getKnownElement@chrome://remote/content/marionette/json.sys.mjs:401:11
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:259:20
+cloneObject/result<@chrome://remote/content/marionette/json.sys.mjs:53:52
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:53:25
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:289:16
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:59:24
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:289:16
+json.deserialize@chrome://remote/content/marionette/json.sys.mjs:293:10
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:72:30
+
+2024-04-06 16:17:08,321 - INFO - WebDriver closed.
+2024-04-06 16:17:20,155 - INFO - Navigated to login page.
+2024-04-06 16:17:23,048 - INFO - Login button clicked successfully.
+2024-04-06 16:17:23,100 - INFO - Email address entered successfully.
+2024-04-06 16:17:23,136 - INFO - Password entered successfully.
+2024-04-06 16:17:23,410 - INFO - Login button clicked successfully.
+2024-04-06 16:17:25,923 - INFO - Main page loaded successfully.
+2024-04-06 16:17:27,260 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:688894/mmsi:538010145/imo:9591806/vessel:EFFIE
+2024-04-06 16:17:33,918 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:688894/mmsi:538010145/imo:9591806/vessel:EFFIE
+2024-04-06 16:17:51,546 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:374953/mmsi:636018294/imo:9249180/vessel:NEW_FRIENDSHIP
+2024-04-06 16:17:51,893 - ERROR - An error occurred: Message: Browsing context has been discarded
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:192:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:678:5
+assert.that/<@chrome://remote/content/shared/webdriver/Assert.sys.mjs:485:13
+assert.open@chrome://remote/content/shared/webdriver/Assert.sys.mjs:147:4
+GeckoDriver.prototype.findElement@chrome://remote/content/marionette/driver.sys.mjs:1485:15
+despatch@chrome://remote/content/marionette/server.sys.mjs:318:40
+execute@chrome://remote/content/marionette/server.sys.mjs:289:16
+onPacket/<@chrome://remote/content/marionette/server.sys.mjs:262:20
+onPacket@chrome://remote/content/marionette/server.sys.mjs:263:9
+_onJSONObjectReady/<@chrome://remote/content/marionette/transport.sys.mjs:494:20
+
+2024-04-06 16:17:53,965 - INFO - WebDriver closed.
+2024-04-06 16:18:05,375 - INFO - Navigated to login page.
+2024-04-06 16:18:08,260 - INFO - Login button clicked successfully.
+2024-04-06 16:18:08,303 - INFO - Email address entered successfully.
+2024-04-06 16:18:08,333 - INFO - Password entered successfully.
+2024-04-06 16:18:08,605 - INFO - Login button clicked successfully.
+2024-04-06 16:18:11,119 - INFO - Main page loaded successfully.
+2024-04-06 16:18:12,520 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:688894/mmsi:538010145/imo:9591806/vessel:EFFIE
+2024-04-06 16:18:19,216 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:688894/mmsi:538010145/imo:9591806/vessel:EFFIE
+2024-04-06 16:18:21,119 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:374953/mmsi:636018294/imo:9249180/vessel:NEW_FRIENDSHIP
+2024-04-06 16:18:25,352 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:374953/mmsi:636018294/imo:9249180/vessel:NEW_FRIENDSHIP
+2024-04-06 16:18:26,296 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:5961417/mmsi:240126100/imo:0/vessel:LITTLE_M
+2024-04-06 16:18:30,956 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:5961417/mmsi:240126100/imo:0/vessel:LITTLE_M
+2024-04-06 16:19:26,968 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:3549980/mmsi:636018564/imo:9679892/vessel:CMA_CGM_CONGO
+2024-04-06 16:19:27,062 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:3549980/mmsi:636018564/imo:9679892/vessel:CMA_CGM_CONGO
+2024-04-06 16:19:33,006 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:6334768/mmsi:440486000/imo:9868364/vessel:HMM_ST_PETERSBURG
+2024-04-06 16:19:34,133 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:6334768/mmsi:440486000/imo:9868364/vessel:HMM_ST_PETERSBURG
+2024-04-06 16:19:38,006 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:7848861/mmsi:636022757/imo:9941788/vessel:EMDEN
+2024-04-06 16:19:39,133 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:7848861/mmsi:636022757/imo:9941788/vessel:EMDEN
+2024-04-06 16:19:39,861 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:685004/mmsi:563191300/imo:9290115/vessel:ONE_ATLAS
+2024-04-06 16:19:42,980 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:685004/mmsi:563191300/imo:9290115/vessel:ONE_ATLAS
+2024-04-06 16:19:43,669 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:385499/mmsi:341548000/imo:1009314/vessel:PREDATOR
+2024-04-06 16:19:47,314 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:385499/mmsi:341548000/imo:1009314/vessel:PREDATOR
+2024-04-06 16:19:58,526 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:7236561/mmsi:256047000/imo:9885855/vessel:MINERVA_AMORGOS
+2024-04-06 16:19:58,581 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:7236561/mmsi:256047000/imo:9885855/vessel:MINERVA_AMORGOS
+2024-04-06 16:19:58,582 - INFO - AIS data saved to JSON file.
+2024-04-06 16:20:01,640 - INFO - WebDriver closed.
+2024-04-06 16:20:13,642 - INFO - Navigated to login page.
+2024-04-06 16:20:15,823 - ERROR - An error occurred: Message: The element with the reference 185a70a7-3f09-40d0-8a34-2bc84fe94bd8 is stale; either its node document is not the active document, or it is no longer connected to the DOM; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:192:5
+StaleElementReferenceError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:724:5
+getKnownElement@chrome://remote/content/marionette/json.sys.mjs:401:11
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:259:20
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:59:24
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:289:16
+json.deserialize@chrome://remote/content/marionette/json.sys.mjs:293:10
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:72:30
+
+2024-04-06 16:20:18,546 - INFO - WebDriver closed.
+2024-04-06 16:20:30,766 - INFO - Navigated to login page.
+2024-04-06 16:20:33,154 - INFO - Login button clicked successfully.
+2024-04-06 16:20:33,211 - INFO - Email address entered successfully.
+2024-04-06 16:20:33,244 - INFO - Password entered successfully.
+2024-04-06 16:20:33,582 - INFO - Login button clicked successfully.
+2024-04-06 16:20:34,092 - ERROR - An error occurred: Message: Failed to decode response from marionette
+
+2024-04-06 16:20:36,181 - INFO - WebDriver closed.
+2024-04-06 16:20:48,474 - INFO - Navigated to login page.
+2024-04-06 16:20:48,520 - ERROR - An error occurred: Message: Browsing context has been discarded
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:192:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:678:5
+assert.that/<@chrome://remote/content/shared/webdriver/Assert.sys.mjs:485:13
+assert.open@chrome://remote/content/shared/webdriver/Assert.sys.mjs:147:4
+GeckoDriver.prototype.findElement@chrome://remote/content/marionette/driver.sys.mjs:1485:15
+despatch@chrome://remote/content/marionette/server.sys.mjs:318:40
+execute@chrome://remote/content/marionette/server.sys.mjs:289:16
+onPacket/<@chrome://remote/content/marionette/server.sys.mjs:262:20
+onPacket@chrome://remote/content/marionette/server.sys.mjs:263:9
+_onJSONObjectReady/<@chrome://remote/content/marionette/transport.sys.mjs:494:20
+
+2024-04-06 16:20:50,584 - INFO - WebDriver closed.
+2024-04-06 16:21:11,005 - INFO - Navigated to login page.
+2024-04-06 16:21:13,891 - INFO - Login button clicked successfully.
+2024-04-06 16:21:13,942 - INFO - Email address entered successfully.
+2024-04-06 16:21:13,977 - INFO - Password entered successfully.
+2024-04-06 16:21:14,277 - INFO - Login button clicked successfully.
+2024-04-06 16:21:24,340 - ERROR - An error occurred: Message: 
+
+2024-04-06 16:21:27,074 - INFO - WebDriver closed.
+2024-04-06 16:21:38,742 - INFO - Navigated to login page.
+2024-04-06 16:21:40,883 - ERROR - An error occurred: Message: The element with the reference b39ac42f-ca2e-4269-bf01-8b81a3f33f73 is stale; either its node document is not the active document, or it is no longer connected to the DOM; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:192:5
+StaleElementReferenceError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:724:5
+getKnownElement@chrome://remote/content/marionette/json.sys.mjs:401:11
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:259:20
+cloneObject/result<@chrome://remote/content/marionette/json.sys.mjs:53:52
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:53:25
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:289:16
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:59:24
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:289:16
+json.deserialize@chrome://remote/content/marionette/json.sys.mjs:293:10
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:72:30
+
+2024-04-06 16:21:43,708 - INFO - WebDriver closed.
+2024-04-06 16:21:55,174 - INFO - Navigated to login page.
+2024-04-06 16:21:58,095 - INFO - Login button clicked successfully.
+2024-04-06 16:21:58,146 - INFO - Email address entered successfully.
+2024-04-06 16:21:58,180 - INFO - Password entered successfully.
+2024-04-06 16:21:58,440 - INFO - Login button clicked successfully.
+2024-04-06 16:22:00,952 - INFO - Main page loaded successfully.
+2024-04-06 16:22:02,305 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:688894/mmsi:538010145/imo:9591806/vessel:EFFIE
+2024-04-06 16:22:08,960 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:688894/mmsi:538010145/imo:9591806/vessel:EFFIE
+2024-04-06 16:23:09,229 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:374953/mmsi:636018294/imo:9249180/vessel:NEW_FRIENDSHIP
+2024-04-06 16:23:09,343 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:374953/mmsi:636018294/imo:9249180/vessel:NEW_FRIENDSHIP
+2024-04-06 16:23:12,439 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:5961417/mmsi:240126100/imo:0/vessel:LITTLE_M
+2024-04-06 16:23:16,062 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:5961417/mmsi:240126100/imo:0/vessel:LITTLE_M
+2024-04-06 16:23:16,902 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:3549980/mmsi:636018564/imo:9679892/vessel:CMA_CGM_CONGO
+2024-04-06 16:23:22,182 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:3549980/mmsi:636018564/imo:9679892/vessel:CMA_CGM_CONGO
+2024-04-06 16:24:18,124 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:6334768/mmsi:440486000/imo:9868364/vessel:HMM_ST_PETERSBURG
+2024-04-06 16:24:18,215 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:6334768/mmsi:440486000/imo:9868364/vessel:HMM_ST_PETERSBURG
+2024-04-06 16:24:22,920 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:7848861/mmsi:636022757/imo:9941788/vessel:EMDEN
+2024-04-06 16:24:23,997 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:7848861/mmsi:636022757/imo:9941788/vessel:EMDEN
+2024-04-06 16:24:24,807 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:685004/mmsi:563191300/imo:9290115/vessel:ONE_ATLAS
+2024-04-06 16:24:28,576 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:685004/mmsi:563191300/imo:9290115/vessel:ONE_ATLAS
+2024-04-06 16:24:31,106 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:385499/mmsi:341548000/imo:1009314/vessel:PREDATOR
+2024-04-06 16:24:37,237 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:385499/mmsi:341548000/imo:1009314/vessel:PREDATOR
+2024-04-06 16:24:40,871 - INFO - Navigated to URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:7236561/mmsi:256047000/imo:9885855/vessel:MINERVA_AMORGOS
+2024-04-06 16:24:42,945 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:7236561/mmsi:256047000/imo:9885855/vessel:MINERVA_AMORGOS
+2024-04-06 16:24:42,946 - INFO - AIS data saved to JSON file.
+2024-04-06 16:24:45,465 - INFO - WebDriver closed.
+2024-04-06 16:24:57,183 - INFO - Navigated to login page.
+2024-04-06 16:24:59,801 - ERROR - An error occurred: Message: The element with the reference e96d8982-c683-44d1-82c7-5d16289db535 is stale; either its node document is not the active document, or it is no longer connected to the DOM; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:192:5
+StaleElementReferenceError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:724:5
+getKnownElement@chrome://remote/content/marionette/json.sys.mjs:401:11
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:259:20
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:59:24
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:289:16
+json.deserialize@chrome://remote/content/marionette/json.sys.mjs:293:10
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:72:30
+
+2024-04-06 16:25:02,629 - INFO - WebDriver closed.

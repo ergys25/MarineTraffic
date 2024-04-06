@@ -3,63 +3,63 @@
         "Name": "EFFIE",
         "IMO": "9591806",
         "MMSI": "538010145",
-        "Speed": "12.2 kn",
-        "Course": "207 \u00b0"
+        "Speed": "12.4 kn",
+        "Course": "269 \u00b0"
     },
     {
         "Name": "NEW FRIENDSHIP",
         "IMO": "9249180",
         "MMSI": "636018294",
-        "Speed": "10.5 kn",
-        "Course": "209 \u00b0"
+        "Speed": "1 kn",
+        "Course": "25 \u00b0"
     },
     {
         "Name": "LITTLE M",
         "IMO": "-",
         "MMSI": "240126100",
-        "Speed": "0 kn",
-        "Course": "-"
+        "Speed": "1.9 kn",
+        "Course": "279 \u00b0"
     },
     {
         "Name": "CMA CGM CONGO",
         "IMO": "9679892",
         "MMSI": "636018564",
-        "Speed": "17.9 kn",
-        "Course": "246 \u00b0"
+        "Speed": "17.7 kn",
+        "Course": "225 \u00b0"
     },
     {
         "Name": "HMM ST PETERSBURG",
         "IMO": "9868364",
         "MMSI": "440486000",
-        "Speed": "3.8 kn",
-        "Course": "315 \u00b0"
+        "Speed": "1.4 kn",
+        "Course": "127 \u00b0"
     },
     {
         "Name": "EMDEN",
         "IMO": "9941788",
         "MMSI": "636022757",
-        "Speed": "15.3 kn",
-        "Course": "217 \u00b0"
+        "Speed": "13.8 kn",
+        "Course": "251 \u00b0"
     },
     {
         "Name": "ONE ATLAS",
         "IMO": "9290115",
         "MMSI": "563191300",
-        "Speed": "1.7 kn",
-        "Course": "313 \u00b0"
+        "Speed": "1.6 kn",
+        "Course": "216 \u00b0"
     },
     {
         "Name": "PREDATOR",
         "IMO": "1009314",
         "MMSI": "341548000",
         "Speed": "0 kn",
-        "Course": "325 \u00b0"
+        "Course": "3 \u00b0"
     },
     {
         "Name": "MINERVA AMORGOS",
         "IMO": "9885855",
         "MMSI": "256047000",
-        "Speed": "13.9 kn",
-        "Course": "207 \u00b0"
+        "Speed": "13.8 kn",
+        "Course": "270 \u00b0"
     }
 ]

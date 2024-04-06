@@ -1,32 +1,18 @@
 import json
 import logging
 from selenium import webdriver
-from selenium.webdriver.firefox.service import Service
-from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
 
-# Configure logging
+
 logging.basicConfig(filename='script.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 
-def initialize_driver(geckodriver_path):
-    """Initialize and return a Firefox webdriver."""
-    service = Service(geckodriver_path)
-    driver = webdriver.Firefox(service=service)
-    return driver
-
-
 def main():
     try:
-        # Set path to geckodriver
-        geckodriver_path = 'geckodriver'
-
-        # Initialize Firefox webdriver
-        driver = initialize_driver(geckodriver_path)
-        logging.info("WebDriver initialized successfully.")
-
+        driver = webdriver.Firefox()
         # Navigate to the login page
         driver.get('https://www.marinetraffic.com/en/users/login')
         logging.info("Navigated to login page.")
@@ -45,7 +31,7 @@ def main():
                     By.XPATH,
                     "/html/body/div[2]/main/section/div[2]/div/div/div[2]/div/form/div/div/div[1]/div/div/input"))
         )
-        email_input.send_keys("<--YOUR_EMAIL_ADDRESS-->")  # Your email
+        email_input.send_keys("ergysmania2016@gmail.com")  # Your email
         logging.info("Email address entered successfully.")
 
         # Enter password
@@ -55,7 +41,7 @@ def main():
                     By.XPATH,
                     "/html/body/div[2]/main/section/div[2]/div/div/div[2]/div/form/div/div/div[2]/div/div/input"))
         )
-        password_input.send_keys("<--YOUR_PASSWORD-->")  # Your password
+        password_input.send_keys("36533653QQq1.")  # Your password
         logging.info("Password entered successfully.")
 
         # Click the login button
