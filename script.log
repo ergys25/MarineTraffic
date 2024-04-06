@@ -25,3 +25,21 @@
 2024-04-05 17:44:20,502 - INFO - Extracted data from URL: https://www.marinetraffic.com/en/ais/details/ships/shipid:7236561/mmsi:256047000/imo:9885855/vessel:MINERVA_AMORGOS
 2024-04-05 17:44:20,503 - INFO - AIS data saved to JSON file.
 2024-04-05 17:44:20,733 - INFO - WebDriver closed.
+2024-04-06 11:35:17,538 - INFO - WebDriver initialized successfully.
+2024-04-06 11:35:19,095 - INFO - Navigated to login page.
+2024-04-06 11:35:22,015 - ERROR - An error occurred: Message: The element with the reference 8e847bd8-ecf3-4009-8981-46e818e91e05 is stale; either its node document is not the active document, or it is no longer connected to the DOM; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:192:5
+StaleElementReferenceError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:724:5
+getKnownElement@chrome://remote/content/marionette/json.sys.mjs:401:11
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:259:20
+cloneObject/result<@chrome://remote/content/marionette/json.sys.mjs:53:52
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:53:25
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:289:16
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:59:24
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:289:16
+json.deserialize@chrome://remote/content/marionette/json.sys.mjs:293:10
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:72:30
+
+2024-04-06 11:35:22,697 - INFO - WebDriver closed.
