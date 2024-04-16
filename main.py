@@ -1,7 +1,9 @@
 import json
 import logging
+import re
+import time
 from selenium import webdriver
-from selenium.webdriver.firefox.service import Service
+from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -13,15 +15,14 @@ logging.basicConfig(filename='script.log', level=logging.INFO,
 
 def initialize_driver(geckodriver_path):
     """Initialize and return a Firefox webdriver."""
-    service = Service(geckodriver_path)
-    driver = webdriver.Firefox(service=service)
+    driver = webdriver.Firefox()
     return driver
 
 
 def main():
     try:
         # Set path to geckodriver
-        geckodriver_path = 'geckodriver'
+        geckodriver_path = '/usr/local/bin/geckodriver'
 
         # Initialize Firefox webdriver
         driver = initialize_driver(geckodriver_path)
@@ -32,90 +33,110 @@ def main():
         logging.info("Navigated to login page.")
 
         # Wait for the login button to be clickable
-        login_button = WebDriverWait(driver, 10).until(
+        wait = WebDriverWait(driver, 10)
+        login_button = wait.until(
             EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div/div/div[2]/div/button[2]"))
         )
         login_button.click()
         logging.info("Login button clicked successfully.")
 
         # Enter email address
-        email_input = WebDriverWait(driver, 1).until(
+        email_input = wait.until(
             EC.visibility_of_element_located(
                 (
                     By.XPATH,
-                    "/html/body/div[2]/main/section/div[2]/div/div/div[2]/div/form/div/div/div[1]/div/div/input"))
+                    "/html/body/div/main/section/div[2]/div/div/div[2]/div/form/div/div/div[1]/div/div/input"))
         )
-        email_input.send_keys("<--YOUR_EMAIL_ADDRESS-->")  # Your email
+        email_input.send_keys("info1@metratek.co.uk")  # Your email
         logging.info("Email address entered successfully.")
 
         # Enter password
-        password_input = WebDriverWait(driver, 1).until(
+        password_input = wait.until(
             EC.visibility_of_element_located(
                 (
                     By.XPATH,
-                    "/html/body/div[2]/main/section/div[2]/div/div/div[2]/div/form/div/div/div[2]/div/div/input"))
+                    "/html/body/div/main/section/div[2]/div/div/div[2]/div/form/div/div/div[2]/div/div/input"))
         )
-        password_input.send_keys("<--YOUR_PASSWORD-->")  # Your password
+        password_input.send_keys("m0hterminal")  # Your password
         logging.info("Password entered successfully.")
 
         # Click the login button
-        login_submit_button = WebDriverWait(driver, 1).until(
+        login_submit_button = wait.until(
             EC.element_to_be_clickable(
-                (By.XPATH, "/html/body/div[2]/main/section/div[2]/div/div/div[2]/div/form/div/div/div[5]/button"))
+                (By.XPATH, "/html/body/div/main/section/div[2]/div/div/div[2]/div/form/div/div/div[5]/button"))
         )
         login_submit_button.click()
         logging.info("Login button clicked successfully.")
 
-        # Wait for the main page to load completely
-        main_page_title = "MarineTraffic"
-        WebDriverWait(driver, 10).until(EC.title_contains(main_page_title))
-        logging.info("Main page loaded successfully.")
-
-        # List of URLs
-        urls = [
-            'https://www.marinetraffic.com/en/ais/details/ships/shipid:688894/mmsi:538010145/imo:9591806/vessel:EFFIE',
-            'https://www.marinetraffic.com/en/ais/details/ships/shipid:374953/mmsi:636018294/imo:9249180/vessel:NEW_FRIENDSHIP',
-            'https://www.marinetraffic.com/en/ais/details/ships/shipid:5961417/mmsi:240126100/imo:0/vessel:LITTLE_M',
-            'https://www.marinetraffic.com/en/ais/details/ships/shipid:3549980/mmsi:636018564/imo:9679892/vessel:CMA_CGM_CONGO',
-            'https://www.marinetraffic.com/en/ais/details/ships/shipid:6334768/mmsi:440486000/imo:9868364/vessel:HMM_ST_PETERSBURG',
-            'https://www.marinetraffic.com/en/ais/details/ships/shipid:7848861/mmsi:636022757/imo:9941788/vessel:EMDEN',
-            'https://www.marinetraffic.com/en/ais/details/ships/shipid:685004/mmsi:563191300/imo:9290115/vessel:ONE_ATLAS',
-            'https://www.marinetraffic.com/en/ais/details/ships/shipid:385499/mmsi:341548000/imo:1009314/vessel:PREDATOR',
-            'https://www.marinetraffic.com/en/ais/details/ships/shipid:7236561/mmsi:256047000/imo:9885855/vessel:MINERVA_AMORGOS'
-        ]
+        # Ships to search
+        ships = ["VINJERAC", "KRITI SAMARIA"]
 
         # Common XPaths
         common_xpaths = {
-            'Name': "/html/body/div[2]/main/section/div[2]/div[2]/div[2]/div/div[1]/div/section/div[2]/table/tbody/tr[1]/td",
-            'IMO': "/html/body/div[2]/main/section/div[2]/div[2]/div[2]/div/div[1]/div/section/div[2]/table/tbody/tr[3]/td",
-            'MMSI': "/html/body/div[2]/main/section/div[2]/div[2]/div[2]/div/div[1]/div/section/div[2]/table/tbody/tr[4]/td",
-            'Speed': "/html/body/div[2]/main/section/div[2]/div[2]/div[2]/div/div[2]/div/section[1]/div/table/tbody/tr[5]/td",
-            'Course': "/html/body/div[2]/main/section/div[2]/div[2]/div[2]/div/div[2]/div/section[1]/div/table/tbody/tr[6]/td"
+            'Name': "/html/body/div/main/section/div[2]/div/div[2]/div/div[1]/div/section/div[2]/table/tbody/tr[1]/td",
+            'IMO': "/html/body/div/main/section/div[2]/div/div[2]/div/div[1]/div/section/div[2]/table/tbody/tr[3]/td",
+            'MMSI': "/html/body/div/main/section/div[2]/div/div[2]/div/div[1]/div/section/div[2]/table/tbody/tr[4]/td",
+            'Speed': "/html/body/div/main/section/div[2]/div/div[2]/div/div[2]/div/section[1]/div/table/tbody/tr[5]/td",
+            'Course': "/html/body/div/main/section/div[2]/div/div[2]/div/div[2]/div/section[1]/div/table/tbody/tr[6]/td"
         }
 
         ais_data_list = []
 
-        for url in urls:
-            # Navigate to the current URL
-            driver.get(url)
-            logging.info(f"Navigated to URL: {url}")
+        for ship in ships:
+            time.sleep(5)
+            driver.get(
+                'https://www.marinetraffic.com/en/data/?asset_type=vessels&columns=flag%2Cshipname%2Cphoto%2Crecognized_next_port%2Creported_eta%2Creported_destination%2Ccurrent_port%2Cimo%2Cship_type%2Cshow_on_live_map%2Ctime_of_latest_position%2Clat_of_latest_position%2Clon_of_latest_position%2Cnotes')
+            logging.info("Navigated to data page.")
+            time.sleep(5)
 
-            # Wait for the page to load completely
-            WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, common_xpaths['Name']))
+            # Enter IMO to search
+            password_input = wait.until(
+                EC.visibility_of_element_located(
+                    (
+                        By.XPATH,
+                        '//*[@id=":r3:"]'))
             )
+            password_input.send_keys(ship)  # Your password
+            logging.info("Password entered successfully.")
 
-            # Extract data based on common XPaths
+            time.sleep(2)
+
+            # Press down once
+            password_input.send_keys(Keys.DOWN)
+
+            time.sleep(2)
+            password_input.send_keys(Keys.ENTER)
+
+            # Click the ship to scrape
+            search_bar = wait.until(
+                EC.element_to_be_clickable(
+                    (By.XPATH, '//*[@id="mainSection"]/div[2]/div/div/div[3]/div/div/div[2]/div[2]/div/div[2]/div/div[2]/div/a'))
+            )
+            search_bar.click()
+            logging.info("Login button clicked successfully.")
+
+            # Extract AIS data
             ais_data = {}
             for key, xpath in common_xpaths.items():
-                element = WebDriverWait(driver, 5).until(
-                    EC.presence_of_element_located((By.XPATH, xpath))
-                )
+                element = wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
                 ais_data[key] = element.text
+
+            # Extract numeric values and units using regex
+            speed_match = re.match(r'(\d+)\s*(\w+)', ais_data['Speed'])
+            if speed_match:
+                ais_data['Speed_Value'] = int(speed_match.group(1))
+                ais_data['Speed_Unit'] = speed_match.group(2)
+            course_match = re.match(r'(\d+)\s*(°)', ais_data['Course'])
+            if course_match:
+                ais_data['Course_Value'] = int(course_match.group(1))
+                ais_data['Course_Unit'] = course_match.group(2)
 
             # Add AIS data to list
             ais_data_list.append(ais_data)
-            logging.info(f"Extracted data from URL: {url}")
+            logging.info(f"Extracted data from URL: {driver.current_url}")
+
+            # Pause for 5 seconds before the next iteration
+            time.sleep(2)
 
         # Save AIS data list to JSON file
         with open('ais_data.json', 'w') as json_file:
