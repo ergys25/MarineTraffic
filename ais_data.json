@@ -1,0 +1,22 @@
+[
+    {
+        "Name": "VINJERAC",
+        "IMO": "9489194",
+        "MMSI": "238296000",
+        "Speed": "0 kn",
+        "Course": "223 \u00b0",
+        "Speed_Value": 0,
+        "Speed_Unit": "kn",
+        "Course_Value": 223,
+        "Course_Unit": "\u00b0"
+    },
+    {
+        "Name": "KRITI SAMARIA",
+        "IMO": "9329409",
+        "MMSI": "636017739",
+        "Speed": "5.3 kn",
+        "Course": "311 \u00b0",
+        "Course_Value": 311,
+        "Course_Unit": "\u00b0"
+    }
+]
