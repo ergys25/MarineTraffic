@@ -2,6 +2,7 @@ import json
 import logging
 import re
 import time
+from datetime import datetime, timedelta
 from selenium import webdriver
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
@@ -47,7 +48,7 @@ def main():
                     By.XPATH,
                     "/html/body/div/main/section/div[2]/div/div/div[2]/div/form/div/div/div[1]/div/div/input"))
         )
-        email_input.send_keys("info1@metratek.co.uk")  # Your email
+        email_input.send_keys("---your-email---")  # Your email
         logging.info("Email address entered successfully.")
 
         # Enter password
@@ -57,7 +58,7 @@ def main():
                     By.XPATH,
                     "/html/body/div/main/section/div[2]/div/div/div[2]/div/form/div/div/div[2]/div/div/input"))
         )
-        password_input.send_keys("m0hterminal")  # Your password
+        password_input.send_keys("---your-password")  # Your password
         logging.info("Password entered successfully.")
 
         # Click the login button
@@ -69,15 +70,18 @@ def main():
         logging.info("Login button clicked successfully.")
 
         # Ships to search
-        ships = ["VINJERAC", "KRITI SAMARIA"]
+        ships = ["9435832", "9352872", "9301653", "7427154"]
 
         # Common XPaths
         common_xpaths = {
             'Name': "/html/body/div/main/section/div[2]/div/div[2]/div/div[1]/div/section/div[2]/table/tbody/tr[1]/td",
+            'Estimated Time Of Arrival': '//*[@id="vesselDetails_aisInfoSection"]/div/table/tbody/tr[12]/td',
             'IMO': "/html/body/div/main/section/div[2]/div/div[2]/div/div[1]/div/section/div[2]/table/tbody/tr[3]/td",
             'MMSI': "/html/body/div/main/section/div[2]/div/div[2]/div/div[1]/div/section/div[2]/table/tbody/tr[4]/td",
             'Speed': "/html/body/div/main/section/div[2]/div/div[2]/div/div[2]/div/section[1]/div/table/tbody/tr[5]/td",
-            'Course': "/html/body/div/main/section/div[2]/div/div[2]/div/div[2]/div/section[1]/div/table/tbody/tr[6]/td"
+            'Course': "/html/body/div/main/section/div[2]/div/div[2]/div/div[2]/div/section[1]/div/table/tbody/tr[6]/td",
+            'Longitude/Latitude': '//*[@id="vesselDetails_aisInfoSection"]/div/table/tbody/tr[4]/td/a',
+            'Predicted Time Of Arrival': '//*[@id="vesselDetails_voyageSection"]/div/div[2]/div/div[3]/div/div[2]/div/span[2]',
         }
 
         ais_data_list = []
@@ -121,11 +125,10 @@ def main():
                 element = wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
                 ais_data[key] = element.text
 
-            # Extract numeric values and units using regex
-            speed_match = re.match(r'(\d+)\s*(\w+)', ais_data['Speed'])
+            # Extract numeric values and units using regex for Speed
+            speed_match = re.match(r'(\d+\.*\d*)\s*kn', ais_data['Speed'])
             if speed_match:
-                ais_data['Speed_Value'] = int(speed_match.group(1))
-                ais_data['Speed_Unit'] = speed_match.group(2)
+                ais_data['Speed_Value'] = float(speed_match.group(1))
             course_match = re.match(r'(\d+)\s*(°)', ais_data['Course'])
             if course_match:
                 ais_data['Course_Value'] = int(course_match.group(1))
@@ -137,6 +140,42 @@ def main():
 
             # Pause for 5 seconds before the next iteration
             time.sleep(2)
+
+            # Go to live view by pressing the live view button
+            live_view_button = wait.until(
+                EC.element_to_be_clickable(
+                    (By.XPATH, '//*[@id="showOnMapCTA"]'))
+            )
+            live_view_button.click()
+            logging.info('//*[@id="showOnMapCTA"]')
+
+
+            time.sleep(5)
+            xpath = '//*[@id="mainSection"]/div[2]/div/div/div/div[1]/div[4]/div/div/div/div/div/div[3]/div/span'
+            element = wait.until(EC.presence_of_element_located((By.XPATH, xpath)))
+            key = 'InsertedDT'
+            title_attribute = element.get_attribute('title')
+            ais_data[key] = title_attribute if title_attribute else element.text
+            time.sleep(2)
+
+            # Extract and format latitude and longitude
+            lat_lon = ais_data['Longitude/Latitude'].split(' / ')
+            ais_data['Latitude'] = float(re.search(r'[-+]?\d*\.\d+|\d+', lat_lon[0]).group())
+            ais_data['Longitude'] = float(re.search(r'[-+]?\d*\.\d+|\d+', lat_lon[1]).group())
+
+            # Convert Estimated Time Of Arrival and Predicted Time Of Arrival to UTC datetime
+            for key in ['Estimated Time Of Arrival', 'Predicted Time Of Arrival']:
+                if ais_data[key]:
+                    timestamp_match = re.search(r'(\d{4}-\d{2}-\d{2} \d{2}:\d{2}) \(UTC([+-]\d+)\)', ais_data[key])
+                    if timestamp_match:
+                        dt = datetime.strptime(timestamp_match.group(1), '%Y-%m-%d %H:%M')
+                        offset_hours = int(timestamp_match.group(2))
+                        dt_utc = dt - timedelta(hours=offset_hours)
+                        ais_data[key] = dt_utc.strftime('%Y-%m-%d %H:%M:%S')
+
+            # Format InsertedDT as YYYY-MM-DD HH:MM
+            if ais_data['InsertedDT']:
+                ais_data['InsertedDT'] = re.sub(r' UTC$', '', ais_data['InsertedDT'])
 
         # Save AIS data list to JSON file
         with open('ais_data.json', 'w') as json_file:
